@@ -1,0 +1,12 @@
+CODE SEGMENT
+ASSUME CS:CODE
+START:
+ mov cx,0000 
+ mov cx,0005h
+ MOV AX, 0000H
+ RPT : INC AX
+        dec CX
+        JNZ RPT
+ HLT
+CODE ENDS
+END START
